@@ -1,3 +1,6 @@
+[Tiptap-vuetify repo.][https://github.com/iliyaZelenko/tiptap-vuetify]
+[Demo site.][https://iliyazelenko.github.io/tiptap-vuetify-demo/]
+
 # tiptap-vuetify-demo
 
 ## Project setup
