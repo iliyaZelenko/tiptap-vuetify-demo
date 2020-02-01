@@ -1,27 +1,45 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Router from 'vue-router'
+import Simple from '../examples/Simple'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
-const routes = [
+export const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: Home
+    path: '/simple',
+    component: Simple,
+    textInfo: 'Simple usage'
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/custom-toolbar',
+    component: () => import('../examples/CustomToolbar'),
+    textInfo: 'Custom toolbar'
+  },
+  {
+    path: '/bubble-menu',
+    component: () => import('../examples/BubbleMenu'),
+    textInfo: 'Bubble Menu'
+  },
+  {
+    path: '/placeholder',
+    component: () => import('../examples/Placeholder'),
+    textInfo: 'Placeholder'
+  },
+  {
+    path: '/preview',
+    component: () => import('../examples/Preview'),
+    textInfo: 'Preview'
   }
 ]
 
-const router = new VueRouter({
-  routes
-})
+export default new Router({
+  mode: 'history',
 
-export default router
+  routes: [
+    ...routes,
+    {
+      path: '/',
+      redirect: '/simple'
+    }
+  ]
+})
