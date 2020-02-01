@@ -1,7 +1,9 @@
-[Tiptap-vuetify repo.](https://github.com/iliyaZelenko/tiptap-vuetify)
-[Demo site.](https://iliyazelenko.github.io/tiptap-vuetify-demo/)
-
 # tiptap-vuetify-demo
+
+## Links
+
+- [Demo site.](https://iliyazelenko.github.io/tiptap-vuetify-demo/)
+- [Tiptap-vuetify repo.](https://github.com/iliyaZelenko/tiptap-vuetify)
 
 ## Project setup
 ```
