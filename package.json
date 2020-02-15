@@ -7,6 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "resolutions": {
+    "prosemirror-model": "1.8.2"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "core-js": "^3.4.4",
