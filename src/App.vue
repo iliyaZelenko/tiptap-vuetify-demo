@@ -21,6 +21,7 @@
           <v-btn
             href="https://github.com/iliyaZelenko/tiptap-vuetify"
             color="orange"
+            @click="$gtag.event('Click github link')"
           >
             <v-icon left>mdi-github-circle</v-icon>
             Github
@@ -30,6 +31,7 @@
             href="https://github.com/iliyaZelenko/tiptap-vuetify-demo"
             color="purple"
             dark
+            @click="$gtag.event('Click demo Source Code link')"
           >
             <v-icon left>mdi-github-circle</v-icon>
             Demo Source Code
@@ -38,6 +40,7 @@
             href="https://www.patreon.com/zelen"
             color="black"
             dark
+            @click="$gtag.event('Click donate link')"
           >
             <v-icon left>mdi-currency-usd</v-icon>
             Donate
@@ -67,6 +70,7 @@
                 class="mx-2"
                 href="https://github.com/iliyaZelenko/tiptap-vuetify/issues"
                 color="green"
+                @click="$gtag.event('Click get free help')"
               >
                 <v-icon left>mdi-lifebuoy</v-icon>
                 Get free help
@@ -75,6 +79,7 @@
                 href="https://github.com/iliyaZelenko/tiptap-vuetify/issues/133"
                 color="red"
                 dark
+                @click="$gtag.event('Click get paid help')"
               >
                 <v-icon left>mdi-handshake</v-icon>
                 Get paid help
@@ -120,11 +125,17 @@
           To support the project, put a star
           <v-icon color="black">mdi-star</v-icon>
           on the
-          <a href="https://github.com/iliyaZelenko/tiptap-vuetify">
+          <a
+            href="https://github.com/iliyaZelenko/tiptap-vuetify"
+            @click="$gtag.event('clickGithubLink')"
+          >
             github
           </a>
           🙏 (this is easy), thanks!
-          <a href="https://share.getcloudapp.com/8LuwOKdR">
+          <a
+            href="https://share.getcloudapp.com/8LuwOKdR"
+            @click="$gtag.event('clickGithubLinkWhereToClick')"
+          >
             Where to click?
           </a>
         </div>

@@ -52,6 +52,10 @@ export default {
   },
   methods: {
     changeIconsGroup (iconsGroup) {
+      this.$gtag.event('changeIconsGroup', {
+        newGroup: iconsGroup,
+        oldGroup: this.currentIconsGroup
+      })
       localStorage.setItem('current_icons_group', iconsGroup)
       window.location.reload()
     }
