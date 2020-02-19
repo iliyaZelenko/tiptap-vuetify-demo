@@ -7969,10 +7969,10 @@ tiptap-utils@^1.8.3:
     prosemirror-tables "1.0.0"
     prosemirror-utils "0.9.6"
 
-tiptap-vuetify@2.12.2:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/tiptap-vuetify/-/tiptap-vuetify-2.12.2.tgz#2ddf83bcadb7d7029e99f819a1ba657916108e91"
-  integrity sha512-m7NLGghg0QCEXeoVJA9cmakxiReJC70krQ9ZXoMN/7xMCYYYF/Te91UmkOCn0uBE/xE/rDVVyTkTDKRYVDmy8Q==
+tiptap-vuetify@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/tiptap-vuetify/-/tiptap-vuetify-2.13.2.tgz#cea028f27c5cdc33a6a10651533597624328f56c"
+  integrity sha512-rTVY3nlbzU0mrgHnHAGv7BwdsOVU3H88/d/sjVmT3zfa0rKbnKTYoexwx8ocpgkONXrJ807kwEi3iOXvAlt+tg==
   dependencies:
     popper.js "^1.16.1"
     tiptap "^1.16.2"

@@ -24,7 +24,9 @@ import {
   HardBreak,
   HorizontalRule,
   History,
-  Image
+  Image,
+  TodoList,
+  TodoItem
 } from 'tiptap-vuetify'
 
 export default {
@@ -54,14 +56,20 @@ export default {
       Link,
       Code,
       HorizontalRule,
+      TodoList,
+      [TodoItem, {
+        options: {
+          nested: true
+        }
+      }],
       Paragraph,
       HardBreak // line break on Shift + Ctrl + Enter
     ],
     content: `
       <h1>Most basic use</h1>
       <p>
-        You can use the necessary extensions. 
-        The corresponding buttons are 
+        You can use the necessary extensions.
+        The corresponding buttons are
         <strong>
           added automatically.
         </strong>
@@ -86,6 +94,23 @@ export default {
         <p>This package is awesome!</p>
       </blockquote>
       <p></p>
+      <p>
+        There is always something to do. Thankfully, there are checklists for that. Don't forget to call mom.
+      </p>
+      <ul data-type="todo_list">
+        <li data-type="todo_item" data-done="true">
+          Buy cheese
+        </li>
+        <li data-type="todo_item" data-done="true">
+          Buy meat
+        </li>
+        <li data-type="todo_item" data-done="true">
+          Buy bread
+        </li>
+        <li data-type="todo_item" data-done="false">
+          Call mom
+        </li>
+      </ul>
     `
   })
 }
