@@ -26,7 +26,11 @@ import {
   History,
   Image,
   TodoList,
-  TodoItem
+  TodoItem,
+  Table,
+  TableCell,
+  TableHeader,
+  TableRow
 } from 'tiptap-vuetify'
 
 export default {
@@ -34,6 +38,10 @@ export default {
   data: () => ({
     extensions: [
       History,
+      Table,
+      TableCell,
+      TableHeader,
+      TableRow,
       Blockquote,
       Link,
       Underline,
@@ -111,6 +119,21 @@ export default {
           Call mom
         </li>
       </ul>
+      <table>
+        <tr>
+          <th colspan="3" data-colwidth="100,0,0">Wide header</th>
+        </tr>
+        <tr>
+          <td>One</td>
+          <td>Two</td>
+          <td>Three</td>
+        </tr>
+        <tr>
+          <td>Four</td>
+          <td>Five</td>
+          <td>Six</td>
+        </tr>
+      </table>
     `
   })
 }

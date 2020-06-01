@@ -14,7 +14,7 @@
     "@babel/polyfill": "^7.4.4",
     "core-js": "^3.4.4",
     "sass": "^1.25.0",
-    "tiptap-vuetify": "2.13.2",
+    "tiptap-vuetify": "2.23.0",
     "vue": "^2.6.10",
     "vue-gtag": "^1.6.1",
     "vue-router": "^3.1.3",
