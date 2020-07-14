@@ -37,13 +37,13 @@
             Demo Source Code
           </v-btn>
           <v-btn
-            href="https://www.patreon.com/zelen"
+            href="https://www.buymeacoffee.com/ilyaZ"
             color="black"
             dark
             @click="$gtag.event('Click donate link')"
           >
             <v-icon left>mdi-currency-usd</v-icon>
-            Donate
+            Buy me a coffe
           </v-btn>
         </div>
 
